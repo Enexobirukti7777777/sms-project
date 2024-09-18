@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(235, 235, 235);
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.icon {
+  vertical-align: middle;
+  line-height: 1;
+  font-size: 20px;
+
+  }
+
+
+.icon_header {
+  vertical-align: middle;
+  line-height: 1;
+  font-size: 26px;
+}
+
+.icon, .icon_header {
+  margin-right: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas: "sidebar header header header"
+                       "sidebar main main main";
+  height: 100vh;
+}
+
+/* Header styles */
+.header {
+  grid-area: header;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between left and right sections */
+  padding: 0 30px;
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+  border-radius: 10px; /* Adjust this value for more or less roundness */
+
+  background-color: white; /* Header background */
+}
+
+.menu-icon {
+  display: flex; /* Display the crown icon */
+  
+}
+
+.header-right {
+  display: flex; /* Maintain flexbox for the right section */
+  justify-content: flex-end; /* Align icons to the right */
+  align-items: center; /* Vertically center the icons */
+}
+
+
+
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Container width */
+  height: 50px; /* Container height */
+  background-color: white; /* Background color for the icon box */
+  border-radius: 15px; /* Rounded corners */
+  margin: 0 5px; /* Spacing between icons */
+  transition: background-color 0.3s; /* Hover effect */
+}
+
+.icon-container:hover {
+  background-color: #e0e0e0; /* Change color on hover */
+}
+.logo {
+  width: 30px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and icons */
+}
+/*sidebar*/
+
+#sidebar {
+  grid-area: sidebar;
+  height: 100%;
+  background-color: white;
+  overflow-y:auto ;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+border-radius: 15px;
+
+}
+.sidebar-list{
+  padding: 0;
+  list-style-type: none;
+
+}
+.sidebar-list-item{
+  padding: 20px 20px 20px 20px;
+  font-size: 18px;
+}
+
+.sidebar-list-item-hover{
+background-color: gray;
+cursor: pointer;
+}
+.sidebar-list-item > a {
+
+text-decoration: none;
+color: black;
+}
+.sidebar-responsive{
+  display: inline !important;
+  position: absolute;
+  z-index: 12 !important;
+}
+.dashboard-item {
+  background-color: rgb(235, 235, 8); /* Yellow background for Dashboard */
+  border-radius: 15px; /* Optional: round the corners */
+}
+
+
+
+
+
+/*sidebar*/
